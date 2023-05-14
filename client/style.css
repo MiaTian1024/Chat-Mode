@@ -212,7 +212,7 @@ p {
 @media (max-width: 768px) {
   #app {
     width: 100vw;
-    height: 92vh;
+    height: 90vh;
   }
   .social-icons {
     display: none;
