@@ -208,3 +208,14 @@ p {
   font-size: 14px;
   color: #555555cb;
 }
+
+@media (max-width: 768px) {
+  #app {
+    width: 100vw;
+    height: 92vh;
+  }
+  .social-icons {
+    display: none;
+  }
+}
+
