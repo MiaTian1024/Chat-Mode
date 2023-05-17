@@ -4,6 +4,21 @@ import user from './assets/user.svg'
 const form = document.querySelector('form')
 const chatContainer = document.querySelector('#chat_container')
 
+const body = document.querySelector('body');
+const date = new Date();
+const currentTime = date.getHours();
+
+if(currentTime < 12){
+  body.style.backgroundColor = '#50a3a2';
+}else if(currentTime < 18) {
+  body.style.backgroundColor = '#ACB1D6';
+}else if(currentTime < 22) {
+  body.style.backgroundColor = '#D5B4B4';
+}else{
+  body.style.backgroundColor = '#EDC6B1';
+}
+
+
 let loadInterval
 
 function loader(element) {
