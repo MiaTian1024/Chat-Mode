@@ -11,6 +11,15 @@ body {
   background: #50a3a2;
 }
 
+
+#greeting {
+  color: #7f7f7f8e;
+  font-size: 100px;
+  font-weight: bold;
+  margin:25% auto;
+
+}
+
 #app {
   width: 100vw;
   height: 85vh;
@@ -208,6 +217,32 @@ p {
   color: #555555cb;
 }
 
+.fade-in {
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  animation: fadeOut 2s 2s forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 @media (max-width: 768px) {
   #app {
     width: 100vw;
@@ -215,6 +250,13 @@ p {
   }
   .social-icons {
     display: none;
+  }
+  #greeting {
+    color: #7f7f7f8e;
+    font-size: 50px;
+    font-weight: bold;
+    margin:40% auto;
+  
   }
 }
 

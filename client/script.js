@@ -7,15 +7,27 @@ const chatContainer = document.querySelector('#chat_container')
 const body = document.querySelector('body');
 const date = new Date();
 const currentTime = date.getHours();
+const greeting = document.getElementById('greeting');
+
+greeting.classList.add('fade-in');
+setTimeout(() => {
+  greeting.classList.add('fade-out')
+}, 1000)
+
+
 
 if(currentTime < 12){
   body.style.backgroundColor = '#50a3a2';
+  greeting.textContent = 'Good Morning';
 }else if(currentTime < 18) {
   body.style.backgroundColor = '#ACB1D6';
+  greeting.textContent = 'Good Afternoon';
 }else if(currentTime < 22) {
   body.style.backgroundColor = '#D5B4B4';
+  greeting.textContent = 'Good Evening';
 }else{
   body.style.backgroundColor = '#EDC6B1';
+  greeting.textContent = 'Good Night';
 }
 
 
