@@ -11,19 +11,9 @@ body {
   background: #50a3a2;
 }
 
-
-#greeting {
-  color: #7f7f7f8e;
-  font-size: 100px;
-  font-weight: bold;
-  margin:25% auto;
-
-}
-
 #app {
   width: 100vw;
   height: 85vh;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,7 +27,6 @@ body {
   max-width: 1280px;
   overflow-y: scroll;
   margin-top:30px;
-
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -251,12 +240,6 @@ p {
   .social-icons {
     display: none;
   }
-  #greeting {
-    color: #7f7f7f8e;
-    font-size: 50px;
-    font-weight: bold;
-    margin:40% auto;
-  
-  }
+
 }
 
