@@ -15,7 +15,6 @@ setTimeout(() => {
 }, 1000)
 
 
-
 if(currentTime < 12){
   body.style.backgroundColor = '#50a3a2';
   greeting.textContent = 'Good Morning';
