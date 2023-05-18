@@ -11,18 +11,17 @@ const greeting = document.getElementById('greeting');
 
 if(currentTime < 12){
   body.style.backgroundColor = '#50a3a2';
-  greeting.placeholder = 'Good Morning...';
+  greeting.placeholder = 'Good morning, ask Chat Mode...';
 }else if(currentTime < 18) {
   body.style.backgroundColor = '#ACB1D6';
-  greeting.placeholder = 'Good Afternoon...';
+  greeting.placeholder = 'Good afternoon, ask Chat Mode...';
 }else if(currentTime < 22) {
   body.style.backgroundColor = '#D5B4B4';
-  greeting.placeholder = 'Good Evening...';
+  greeting.placeholder = 'Good evening, ask Chat Mode...';
 }else{
   body.style.backgroundColor = '#EDC6B1';
-  greeting.placeholder = 'Good Night...';
+  greeting.placeholder = 'Good night, ask Chat Mode...';
 }
-
 
 let loadInterval
 
